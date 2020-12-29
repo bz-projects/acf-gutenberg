@@ -1,0 +1,80 @@
+/* ==========================================================================
+ # Gutenberg Editor (back-end)
+========================================================================== */
+
+/* Vendor (external)
+----------------------------------------------- */
+
+@import "../../node_modules/breakpoint-sass/stylesheets/_breakpoint.scss";
+
+/* Base
+----------------------------------------------- */
+
+@import "base/variables";
+@import "base/mixins";
+@import "base/normalize";
+@import "base/media";
+
+/* Blocks
+----------------------------------------------- */
+
+@import "blocks/core-button";
+@import "blocks/core-columns";
+@import "blocks/core-embed";
+@import "blocks/core-file";
+@import "blocks/core-freeform";
+@import "blocks/core-gallery";
+@import "blocks/core-group";
+@import "blocks/core-heading";
+@import "blocks/core-image";
+@import "blocks/core-list";
+@import "blocks/core-media-text";
+@import "blocks/core-paragraph";
+@import "blocks/core-quote";
+@import "blocks/core-separator";
+@import "blocks/core-table";
+@import "blocks/settings-alignment";
+@import "blocks/settings-colors";
+
+/* Elements
+----------------------------------------------- */
+
+@import "elements/forms-search";
+@import "elements/hero";
+@import "elements/list-terms";
+@import "elements/menu-primary";
+@import "elements/menu-social";
+@import "elements/menu-toggle";
+@import "elements/menu-upper";
+@import "elements/numeric-posts-nav";
+@import "elements/social-share";
+@import "elements/teaser";
+
+.block-editor {
+
+  .editor-post-title {
+    &__input {
+      font-family: $font-title;
+      text-align: center;
+    }
+  }
+
+  .wp-block {
+    font-family: $font-text;
+    @import "base/typography";
+    max-width: $max-width-m;
+
+    &[data-align="wide"] {
+      max-width: $max-width-l;
+    }
+
+    &[data-align="full"] {
+      max-width: none;
+    }
+  }
+
+  .block-editor-writing-flow__click-redirect {
+    min-height: 0 !important;
+  }
+
+}
