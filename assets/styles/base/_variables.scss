@@ -160,29 +160,3 @@ $line-height-big:     1.75;
        url('../fonts/montserrat-v12-latin-900.ttf')             format('truetype'),
        url('../fonts/montserrat-v12-latin-900.svg#Montserrat')  format('svg');
 }
-
-
-/* CSS VARIABLES
------------------------------------------------ */
-
-// Colors 
-:root {
-  --wp-admin-theme-color: var(--wp--preset--primary--color);
-  --wp--style--color--link: var(--wp--preset--primary--color);
-  --wp--preset--text--color:  #{ $base-font-color };
-
-  --wp--preset--primary--color: #{ $primary };
-  --wp--preset--secound--color: #{ $primary };
-  --wp--preset--darken--color:  #{ $base-font-color };
-  --wp--preset--lighten--color: #{ $grey-font-color };
-}
-
-
-// Content Font
-:root {
-  --wp--preset--font-size: 17px; 
-  --wp--preset--main-font: #{ $font-text }; 
-  --wp--preset--headline-font: #{ $font-text }; 
-  --wp--preset--font-weight--normal: #{ $normal }; 
-  --wp--preset--font-line--height: #{ $line-height };
-}

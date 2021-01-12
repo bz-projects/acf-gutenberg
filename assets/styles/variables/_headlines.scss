@@ -1,0 +1,27 @@
+@mixin var--headlines() {
+
+    // H1
+    --wp--preset--h1-font-size: 33px;
+    --wp--preset--h1-line-height: #{ $line-height };
+
+
+    // H2
+    --wp--preset--h2-font-size: 27px;
+    --wp--preset--h2-line-height: #{ $line-height };
+
+    // H3
+    --wp--preset--h3-font-size: 24px;
+    --wp--preset--h3-line-height: #{ $line-height };
+
+    // H4
+    --wp--preset--h4-font-size: 20px;
+    --wp--preset--h4-line-height: #{ $line-height };
+
+    // H5
+    --wp--preset--h5-font-size: 18px;
+    --wp--preset--h5-line-height: #{ $line-height };
+
+    // H6
+    --wp--preset--h6-font-size: 18px;
+    --wp--preset--h6-line-height: #{ $line-height };
+}

@@ -47,7 +47,7 @@ function agt_acf_blocks_loader() {
             'name'              => "{$matches[0]}_" . sanitize_title($meta['name']),
             'title'             => $meta['name'],
             'description'       => $meta['description'],
-            'category'          => $meta['category'],
+            // 'category'          => $meta['category'],
             'post_types'        => $post_types,
             'render_template'   => strstr( $filepath, 'blocks'),
             'supports'          => array(
@@ -58,4 +58,30 @@ function agt_acf_blocks_loader() {
         ));
     }
 }
-  add_action('acf/init', 'agt_acf_blocks_loader');
+add_action('acf/init', 'agt_acf_blocks_loader');
+
+
+// ACF CLASS NAMES
+function agt_acf_class_names( $block, $name = 'custom-block' ) {
+    $id = $block['id'];
+
+    if( !empty($block['anchor']) ) {
+        $id = $block['anchor'];
+    }
+
+    $className = $name;
+
+    if( !empty($block['className']) ) {
+        $className .= ' ' . $block['className'];
+    }
+    if( !empty($block['align']) ) {
+        $className .= ' align' . $block['align'];
+    }
+
+    $get_data = array(
+        'id'        => $id,
+        'className' => $className, 
+    );
+
+    return $get_data;
+}

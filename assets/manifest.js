@@ -1,7 +1,3 @@
-/**
- * Project specific gulp configuration
- */
-
 module.exports = {
 
   /**
@@ -44,6 +40,7 @@ module.exports = {
         "scripts/lib/dropdown-menu.js",
         "scripts/lib/markup-enhancements.js",
         "scripts/lib/mobile-menu.js",
+        "scripts/lib/modernizr.js",
         "scripts/lib/css-variables-polyfill.js",
         "scripts/main.js"
       ],

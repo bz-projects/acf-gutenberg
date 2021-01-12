@@ -40,22 +40,22 @@ p, .p {
 
 h1 {
   @include heading(xl);
-  margin: 0 0 2rem;
+  margin: 0 0 var(--wp--preset--global-space);
 }
 
 h2 {
   @include heading(l);
-  margin: 1.5rem 0;
+  margin: var(--wp--preset--global-space) 0;
 }
 
 h3 {
   @include heading(m);
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--wp--preset--global-space);
 }
 
 h4, .h4 {
   @include heading(s);
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--wp--preset--global-space);
 }
 
 h5, .h5 {

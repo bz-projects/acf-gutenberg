@@ -1,0 +1,12 @@
+@mixin var--colors() {
+    --wp-admin-theme-color: var(--wp--preset--primary--color);
+    --wp--style--color--link: var(--wp--preset--primary--color);
+    --wp--preset--text--color:  #{ $base-font-color };
+  
+    --wp--preset--primary--color: #{ $primary };
+    --wp--preset--secound--color: #{ $primary };
+    --wp--preset--darken--color:  #{ $base-font-color };
+    --wp--preset--lighten--color: #{ $grey-font-color };
+    --wp--preset--white--color: #ffffff;
+    --wp--preset--black--color: #000000;
+}

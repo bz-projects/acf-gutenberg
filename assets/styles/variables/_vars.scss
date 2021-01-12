@@ -1,0 +1,14 @@
+/* CSS VARIABLES
+----------------------------------------------- */
+
+@import 'globals';
+@import 'color';
+@import 'fonts';
+@import 'headlines';
+
+:root {
+  @include var--globals;
+  @include var--colors;
+  @include var--fonts; 
+  @include var--headlines; 
+}

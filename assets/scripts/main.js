@@ -1,6 +1,10 @@
-/* ==========================================================================
-  main.js
-========================================================================== */
+/**
+ * Globals
+ */
+
+function is_IE() {
+  return (window.navigator.userAgent.match(/MSIE|Trident/) !== null);
+}
 
 /**
  * Init dropdown-menus
@@ -58,10 +62,14 @@ if (document.querySelectorAll('.lightbox').length) {
   }
 }
 
+// CSS VARIABLES IE CHECK
+if( is_IE() ) {
 
-// POLYFILL CSS VARIBALES
-cssVars({
-  rootElement   : document,
-  onlyLegacy    : false,
-  include       : 'link[rel=stylesheet],style',
-});
+  // POLYFILL CSS VARIBALES
+  cssVars({
+    rootElement   : document,
+    onlyLegacy    : false,
+    include       : 'link[rel=stylesheet],style',
+  });
+
+}

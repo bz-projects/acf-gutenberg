@@ -1,0 +1,3 @@
+@mixin var--globals() {
+    --wp--preset--global-space: #{ $gap-medium };
+}

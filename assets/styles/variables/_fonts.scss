@@ -1,0 +1,7 @@
+@mixin var--fonts() {
+    --wp--preset--font-size: 17px; 
+    --wp--preset--main-font: #{ $font-text }; 
+    --wp--preset--headline-font: #{ $font-text }; 
+    --wp--preset--font-weight--normal: #{ $normal }; 
+    --wp--preset--font-line--height: #{ $line-height };
+}
